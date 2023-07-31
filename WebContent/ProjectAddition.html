@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Project Assignment</title>
+
+<script type="text/javascript">
+function EnableDisableTextBox(ProductX)
+{
+	var insertinputs = document.getElementById("insertinputs");
+	insertinputs.disabled = ProductX.checked ? false : true;
+     if (!insertinputs.disabled) {
+    	 insertinputs.focus();
+     }
+}
+
+function EnableDisableTextBox1(ProductY)
+{
+	var insertinputs1 = document.getElementById("insertinputs1");
+	insertinputs1.disabled = ProductY.checked ? false : true;
+     if (!insertinputs1.disabled) {
+    	 insertinputs1.focus();
+     }
+}
+
+function EnableDisableTextBox2(ProductY)
+{
+	var insertinputs2 = document.getElementById("insertinputs2");
+	insertinputs2.disabled = ProductY.checked ? false : true;
+     if (!insertinputs2.disabled) {
+    	 insertinputs2.focus();
+     }
+}
+
+function EnableDisableTextBox3(Computerization)
+{
+	var insertinputs3 = document.getElementById("insertinputs3");
+	insertinputs3.disabled = Computerization.checked ? false : true;
+     if (!insertinputs3.disabled) {
+    	 insertinputs3.focus();
+     }
+}
+
+function EnableDisableTextBox4(Reorganization)
+{
+	var insertinputs4 = document.getElementById("insertinputs4");
+	insertinputs4.disabled = Reorganization.checked ? false : true;
+     if (!insertinputs4.disabled) {
+    	 insertinputs4.focus();
+     }
+}
+
+function EnableDisableTextBox5(NewBenefits)
+{
+	var insertinputs5 = document.getElementById("insertinputs5");
+	insertinputs5.disabled = NewBenefits.checked ? false : true;
+     if (!insertinputs5.disabled) {
+    	 insertinputs5.focus();
+     }
+}
+
+</script>
+</head>
+<body>
+<h1>Assign Projects to Employee</h1>
+<form action="addproject.jsp" method=post>
+<label for="ESSN">
+Enter ESSN: <input type="text" id="essn" name="essn" />
+</label> <br />
+<label for="ProductX">
+<input type="checkbox" id="ProductX" name="ProductX" value="1" onclick="EnableDisableTextBox(this)" /> ProductX
+</label> <br />
+Hours allocated: <input type=number name=insertinputs id="insertinputs" disabled="disabled"><br>
+<label for="ProductY">
+<input type="checkbox" id="ProductY" name="ProductY" value="2" onclick="EnableDisableTextBox1(this)"> ProductY
+</label> <br />
+Hours allocated: <input type=number name=insertinputs1 id="insertinputs1" disabled="disabled"> <br>
+<label for="ProductZ">
+<input type="checkbox" id="ProductZ" name="ProductZ" value="3" onclick="EnableDisableTextBox2(this)"> ProductZ
+</label> <br />
+Hours allocated: <input type=number name=insertinputs2 id="insertinputs2" disabled="disabled"> <br>
+<label for="Computerization">
+<input type="checkbox" id="Computerization" name="Computerization" value="10" onclick="EnableDisableTextBox3(this)"> Computerization
+</label> <br />
+Hours allocated: <input type=number name=insertinputs3 id="insertinputs3" disabled="disabled"> <br>
+<label for="Reorganization">
+<input type="checkbox" id="Reorganization" name="Reorganization" value="20" onclick="EnableDisableTextBox4(this)"> Reorganization
+</label> <br />
+Hours allocated: <input type=number name=insertinputs4 id="insertinputs4" disabled="disabled"> <br>
+<label for="NewBenefits">
+<input type="checkbox" id="Newbenefits" name="Newbenefits" value="30" onclick="EnableDisableTextBox5(this)"> NewBenefits
+</label> <br />
+Hours allocated: <input type=number name=insertinputs5 id="insertinputs5" disabled="disabled"> <br> 
+<label for="sum">
+<input type="submit" id="sum" value="AddProject">
+</label>
+</form>
+</body>
+</html>

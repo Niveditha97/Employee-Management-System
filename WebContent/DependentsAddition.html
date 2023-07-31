@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Dependents</title>
+<style>
+label
+{
+display:inline-block;
+width:150px;
+margin-bottom:10px;
+}
+</style>
+</head>
+<body>
+<h1>Add Dependents</h1>
+<form method="post" action="adddep.jsp">
+<label>ESSN:</label>
+<input type="number" name="essn" size="10"/><br/>
+<label>Dependent_Name:</label>
+<input type="text" name="dependent_name"/><br/>
+<label>Sex</label><br/>
+<input type="radio" id="male" name="sex" value="M">
+  <label for="male">Male</label><br/>
+  <input type="radio" id="female" name="sex" value="F">
+  <label for="female">Female</label><br/>
+  <input type="radio" id="other" name="sex" value="O">
+  <label for="other">Other</label><br/>
+  <label>BDATE:</label>
+  <input type="date" name="bdate"/><br/>
+  <label>Relationship:</label>
+  <input type="text" name="relationship"/><br/>
+  <input type="submit" id="dep" value="AddDependent"><br><br>
+  </form>
+  </body>
+</html>
